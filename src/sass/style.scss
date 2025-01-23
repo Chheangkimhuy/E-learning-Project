@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --darkblue-800: #123e7a;
+    --darkblue-700: #114793;
+    --darkblue-600: #1459b5;
+    --darkblue-500: #2275d5;
+}
+
+.bg-darkblue-800 {
+    background-color: var(--darkblue-800) !important;
+}
+
+.bg-darkblue-700 {
+    background-color: var(--darkblue-700) !important;
+}
+
+.bg-darkblue-600 {
+    background-color: var(--darkblue-600) !important;
+}
+
+.bg-darkblue-500 {
+    background-color: var(--darkblue-500) !important;
+}
+
+.text-darkblue-800 {
+    background-color: var(--darkblue-800) !important;
+}
+
+.text-darkblue-700 {
+    background-color: var(--darkblue-700) !important;
+}
+
+.text-darkblue-600 {
+    background-color: var(--darkblue-600) !important;
+}
+
+.text-darkblue-500 {
+    background-color: var(--darkblue-500) !important;
+}
+
+@media (max-width: 576px) {
+    .offcanvas {
+        width: 80% !important;
+    }
+}
+
+.font-navbar{
+    font-family: "Poppins", serif !important;
+}
+.font-body{
+    font-family: "Quicksand", serif !important;
+}
+.text-limit {
+    overflow: hidden !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 4!important;
+            line-clamp: 4!important; 
+    -webkit-box-orient: vertical !important;
+} 
