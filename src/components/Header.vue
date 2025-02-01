@@ -44,7 +44,7 @@
     </div>
   </nav>
 
-  <div class="offcanvas show offcanvas-start" id="sideBar">
+  <div class="offcanvas offcanvas-start" id="sideBar">
     <div class="offcanvas-header shadow p-2 px-3">
       <a href="" class="fs-2 text-dark text-decoration-none fw-bold">Logo</a>
       <button

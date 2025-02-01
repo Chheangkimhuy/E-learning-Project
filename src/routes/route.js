@@ -4,7 +4,7 @@ import Course from '../page/Course.vue';
 
 const routes = [
     { path: '/', component: Home },
-    { path: '/course', component: Course },
+    { path: '/course/:id', component: Course },
 ];
 
 const router = createRouter({

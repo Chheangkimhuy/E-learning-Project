@@ -1,8 +1,9 @@
 <script setup>
-import { UseMyStore } from '../store/StoreAPI';
+import { UseMyStore } from '../store/storeAPI';
 const store = UseMyStore();
 const {items,loading,error} = store;
 console.log(items,loading,error);
+import Card from '../components/Card.vue';
 </script>
 <template>
   <div class="container-fluid p-0">
@@ -207,6 +208,7 @@ console.log(items,loading,error);
           />
         </div>
       </div>
+      <Card/>
     </div>
   </div>
 </template>
