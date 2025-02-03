@@ -1,12 +1,12 @@
 <script setup>
-import { UseMyStore } from '../store/storeAPI';
+import { UseMyStore } from "../store/storeAPI";
 const store = UseMyStore();
-const {items,loading,error} = store;
-console.log(items,loading,error);
-import Card from '../components/Card.vue';
+const { items, loading, error } = store;
+console.log(items, loading, error);
+import Card from "../components/Card.vue";
 </script>
 <template>
-  <div class="container-fluid p-0">
+  <div class="container-fluid p-0 font-navbar" style="margin-top: 80px">
     <!-- carousels -->
     <div class="w-100">
       <div
@@ -17,6 +17,42 @@ import Card from '../components/Card.vue';
         <div class="carousel-inner">
           <div
             class="carousel-item active bg-info"
+            style="height: 80vh"
+            data-bs-interval="10000"
+          >
+            <div
+              class="z-3 position-absolute col-10 col-md-7 col-lg-4"
+              style="top: 30%; left: 13%"
+            >
+              <p class="text-primary fw-bold">Wellcome to My Website</p>
+              <h1
+                class="text-light fw-bold"
+                style="font-size: camp(12px, 3vw, 50px)"
+              >
+                Interactive learning Experience
+              </h1>
+              <p class="fs-medium text-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                eveniet dolores quaerat a ea possimus!
+              </p>
+              <div>
+                <button class="btn btn-success px-3 py-3 rounded-0 me-3">
+                  Join Now
+                </button>
+                <button class="btn btn-outline-light px-3 py-3">
+                  Read More
+                </button>
+              </div>
+            </div>
+            <img
+              src="https://www.shutterstock.com/image-photo/teacher-giving-computer-science-lecture-600nw-2102457352.jpg"
+              class="d-block w-100 h-100 object-fit-cover"
+              style="filter: brightness(70%)"
+              alt="..."
+            />
+          </div>
+          <div
+            class="carousel-item bg-info"
             style="height: 80vh"
             data-bs-interval="10000"
           >
@@ -45,21 +81,47 @@ import Card from '../components/Card.vue';
               </div>
             </div>
             <img
-              src="https://www.shutterstock.com/image-photo/teacher-giving-computer-science-lecture-600nw-2102457352.jpg"
+              src="https://ugc.futurelearn.com/uploads/images/01/01/010123da-348a-4951-a0ac-75d320a8322c.jpg"
               class="d-block w-100 h-100 object-fit-cover"
               style="filter: brightness(70%)"
               alt="..."
             />
           </div>
           <div
-            class="carousel-item bg-success"
+            class="carousel-item bg-info"
             style="height: 80vh"
-            data-bs-interval="2000"
+            data-bs-interval="10000"
           >
-            <img src="..." class="d-block w-100" alt="..." />
-          </div>
-          <div class="carousel-item bg-secondary" style="height: 80vh">
-            <img src="..." class="d-block w-100" alt="..." />
+            <div
+              class="z-3 position-absolute col-10 col-md-7 col-lg-4"
+              style="top: 30%; left: 13%"
+            >
+              <p class="text-primary">Wellcome to My Website</p>
+              <h1
+                class="text-light fw-bold"
+                style="font-size: camp(12px, 3vw, 50px)"
+              >
+                Interactive learning Experience
+              </h1>
+              <p class="fs-medium text-light">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                eveniet dolores quaerat a ea possimus!
+              </p>
+              <div>
+                <button class="btn btn-success px-3 py-3 rounded-0 me-3">
+                  Join Now
+                </button>
+                <button class="btn btn-outline-light px-3 py-3">
+                  Read More
+                </button>
+              </div>
+            </div>
+            <img
+              src="https://codakid.com/wp-content/uploads/2017/07/iStock-598234802.jpg"
+              class="d-block w-100 h-100 object-fit-cover"
+              style="filter: brightness(70%)"
+              alt="..."
+            />
           </div>
         </div>
         <button
@@ -200,7 +262,7 @@ import Card from '../components/Card.vue';
             <button class="btn btn-outline-success py-2 px-4">Learn Now</button>
           </div>
         </div>
-        <div class="col-lg-6 col-12 col-md-12 ">
+        <div class="col-lg-6 col-12 col-md-12">
           <img
             src="https://www.teacheracademy.eu/wp-content/uploads/2021/10/successful-teacher-1-608x405.jpg"
             alt=""
@@ -208,7 +270,7 @@ import Card from '../components/Card.vue';
           />
         </div>
       </div>
-      <Card/>
+      <Card />
     </div>
   </div>
 </template>

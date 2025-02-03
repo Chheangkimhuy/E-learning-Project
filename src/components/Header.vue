@@ -1,5 +1,5 @@
 <template>
-  <nav class="container-fluid p-0 navbar shadow font-navbar">
+  <nav class="container-fluid p-0 navbar shadow font-navbar fixed-top bg-light">
     <div class="container py-2">
       <a href="" class="fs-2 text-dark text-decoration-none fw-bold">Logo</a>
       <button
@@ -12,13 +12,20 @@
       <div class="d-lg-block d-none">
         <ul class="nav align-items-center">
           <li class="px-3">
-            <router-link to="/" class="text-dark text-decoration-none"> HOME</router-link>
+            <router-link to="/" class="text-dark text-decoration-none">
+              HOME</router-link
+            >
           </li>
           <li class="px-3">
             <a href="" class="text-dark text-decoration-none"> ABOUT</a>
           </li>
           <li class="px-3">
-            <router-link to="/course" class="text-dark text-decoration-none"> COURSES</router-link>
+            <router-link
+              to="/course/:id"
+              class="text-dark text-decoration-none"
+            >
+              COURSES</router-link
+            >
           </li>
           <li class="px-3">
             <a href="" class="text-dark text-decoration-none"> CONTACT</a>
@@ -61,7 +68,9 @@
           <a href="" class="text-dark text-decoration-none"> ABOUT</a>
         </li>
         <li class="py-2 border-bottom pb-3">
-          <a href="" class="text-dark text-decoration-none"> COURSES</a>
+          <router-link to="/course/:id" class="text-dark text-decoration-none">
+            COURSES</router-link
+          >
         </li>
         <li class="py-2 border-bottom pb-3">
           <a href="" class="text-dark text-decoration-none"> CONTACT</a>
@@ -88,10 +97,9 @@
 </template>
 
 <script setup>
-
-import { ref } from 'vue';
-import { RouterLink } from 'vue-router';
-const  isloggin = ref(false)
+import { ref } from "vue";
+import { RouterLink } from "vue-router";
+const isloggin = ref(false);
 </script>
 
 <style lang="scss" scoped>
